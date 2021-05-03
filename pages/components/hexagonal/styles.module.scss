@@ -1,0 +1,48 @@
+.container {
+  ul{
+    white-space: nowrap;
+    display: flex;
+    transform: translateX(-15%);
+    
+  }
+  ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    width: 4rem;  height: 2.3rem;
+    margin: 0 1rem;
+    transition: .9s;
+    
+  }
+  ul li:hover{
+    transform: translateY(-30px);
+    cursor: pointer;
+  } 
+  ul li::before,ul li::after{
+    content: '';
+    position: absolute;
+    top: 0;  left: 0;
+    width: 100%;  height: 100%;
+    z-index: -1;
+  }
+  ul li::before{
+    transform: rotate(60deg); 
+  }
+  ul li::after{
+    transform: rotate(-60deg); 
+  }
+  ul li a{
+    display: inline-block;
+    width: 100%;   height: 100%;
+    color: var(--white);  
+    text-align: center;   line-height: 86px;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 2rem;
+
+  }
+
+  ul li a,ul li::before,ul li::after{
+    background: var(--gray);
+  }
+}

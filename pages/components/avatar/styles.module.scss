@@ -1,0 +1,26 @@
+.avatar {
+  height: 7rem;
+  width: 7rem;
+  margin: auto;
+}
+
+.img { 
+  border-radius: 50%;
+}
+
+.spin {
+  animation-duration: 1s;
+  animation-name: spin-animation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 48%;
+  height: inherit;
+  width: inherit;
+  background: linear-gradient(180deg, #21db7b 80%, #db21a0);
+  position: absolute;
+}
+
+@keyframes spin-animation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

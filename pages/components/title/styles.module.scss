@@ -1,0 +1,10 @@
+.container {
+    h1{
+      text-overflow: ellipsis;
+      font-size: 3rem;
+      font-family: "Helvetica Neue";
+      color: var(--white);
+      text-shadow: 2px 2px 5px var(--gray);
+      line-height: 2.5rem;
+    }
+}
