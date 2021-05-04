@@ -1,7 +1,7 @@
 <h1 align="center">
   👾 Currículo Andressa Novaes 👾
 </h1>
-<p align="center">🚀 Sistema para exibição  do software skill da Andressa. Desenvolvido com [Nextjs](https://nextjs.org) utilizando uma arquitetura SSR.
+<p align="center">🚀 Sistema para exibição  do software skill da Andressa. Desenvolvido com [Next Js](https://nextjs.org) utilizando uma arquitetura SSR.
 </p>
 
 ### Features
@@ -23,7 +23,7 @@
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js - v14.16.1](https://nodejs.org/en/), [Next Js](https://nextjs.org) versão 9.0.0-rc.0.
+[Git](https://git-scm.com), [Node.js - v14.16.1](https://nodejs.org/en/), [Next Js](https://nextjs.org).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Front
