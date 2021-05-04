@@ -7,9 +7,9 @@ import styles from './styles.module.scss';
 
 export default function ListHexagonal() {
   const links = [
-    { icon: faLinkedinIn, links: 'https://www.linkedin.com/in/andressa-novaes-b49ab7139/' },
-    { icon: faGithub, links: 'https://www.linkedin.com/in/andressa-novaes-b49ab7139/' },
-    { icon: faEnvelope, links: 'https://www.linkedin.com/in/andressa-novaes-b49ab7139/' },
+    { icon: faLinkedinIn, href: 'https://www.linkedin.com/in/andressa-novaes-b49ab7139/' },
+    { icon: faGithub, href: 'https://github.com/isa-desenvolvimento' },
+    { icon: faEnvelope, href: 'https://www.linkedin.com/in/andressa-novaes-b49ab7139/' },
   ];
 
   return (

@@ -17,7 +17,7 @@ export default function Hexagonal({ children }: Array<IProps>) {
         {
           children && children.map((item: IProps) => (
             <li className={item.className}>
-              <a>
+              <a href={item.href}>
                 <FontAwesomeIcon icon={item.icon} />
               </a>
             </li>
