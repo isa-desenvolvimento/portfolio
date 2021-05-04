@@ -10,7 +10,7 @@ export interface IProps {
 
 export default function Avatar(props: IProps) {
   return (
-    <div className={styles.avatar}>
+    <div className={`${styles.avatar} avatar`}>
       <div className={styles.spin} />
       <Image {...props} className={styles.img} objectFit="unset" />
     </div>
