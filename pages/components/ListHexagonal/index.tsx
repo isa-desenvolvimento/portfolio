@@ -14,7 +14,7 @@ export default function ListHexagonal() {
 
   return (
     <div className={styles.container}>
-      <Hexagonal children={links} />
+      <Hexagonal list={links} />
     </div>
   );
 }
