@@ -6,3 +6,11 @@ node_js:
 script:
   # - yarn test
   - yarn build
+
+  language: node_js
+
+deploy:
+  provider: heroku
+  app: andressa-novaes
+  api_key:
+    secure: 4f34fdec-6e38-49d9-a114-e37e67ded28d
