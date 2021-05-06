@@ -1,20 +1,24 @@
 /* eslint-disable import/prefer-default-export */
-export async function animateRotate(containerClass: string, cardClass: string, itens: any = []) {
+import { MouseEvent } from 'react';
+
+export async function animateRotate(containerClass: string, cardClass: string) {
   const container = await document.querySelector(containerClass);
   const card = await document.querySelector(cardClass);
 
-  container?.addEventListener('mousemove', (e) => {
-    const xaxis = (window.innerWidth / 2 - e.pageX) / 10;
-    const yaxis = (window.innerHeight / 2 - e.pageY) / 10;
+  if (!container) return;
 
-    card && (card.style.transform = `rotateY(${xaxis}deg) rotateX(${yaxis}deg)`);
+  container?.addEventListener('mousemove', (e) => {
+    const xaxis = (window.innerWidth / 2 - (e.pageX || 0)) / 10;
+    const yaxis = (window.innerHeight / 2 - (e.pageY || 0)) / 10;
+
+    if (card) card.style.transform = `rotateY(${xaxis}deg) rotateX(${yaxis}deg)`;
   });
 
   container?.addEventListener('mouseenter', (e) => {
-    card && (card.style.transition = 'all 0.5s ease');
+    if (card) card.style.transition = 'all 0.5s ease';
   });
 
   container?.addEventListener('mouseleave', (e) => {
-    card && (card.style.transform = 'rotateY(0deg) rotateX(0deg)');
+    if (card) card.style.transform = 'rotateY(0deg) rotateX(0deg)';
   });
 }

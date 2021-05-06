@@ -9,7 +9,7 @@ export default function Home() {
   const txt = 'Tenho 26 anos, moro em brasília, tenho o gato mais lindo do mundo, gosto de gravar vídeos e jogar airsoft ☠️';
 
   useEffect(() => {
-    animateRotate('.container', '.glass-profile', ['.avatar']);
+    animateRotate('.container', '.glass-profile');
   });
 
   const defaultOptions = {
