@@ -11,7 +11,14 @@
 
   .glass {
     width: 25%;
-    height: calc(100vh - 3rem);
+    min-width: 25rem;
+    height: calc(100vh - 5rem);
+  }
+
+  @media only screen and (max-width: 500px) {
+    .glass {
+      width: 100%;
+    }
   }
 }
 
