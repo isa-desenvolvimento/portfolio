@@ -6,7 +6,7 @@ export interface IProps {
 
 export default function Title({ txt }: IProps) {
   return (
-    <div className={styles.container}>
+    <div className={`title ${styles.container}`}>
       <h1>{txt}</h1>
     </div>
   );

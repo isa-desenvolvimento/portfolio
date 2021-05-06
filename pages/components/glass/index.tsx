@@ -12,7 +12,7 @@ export interface IGlass {
 
 export default function Glass({ title, avatar, txt }: IGlass) {
   return (
-    <div className={styles.container}>
+    <div className={`glass-profile ${styles.container}`}>
       <Avatar
         src={avatar}
         alt="Picture of the author"

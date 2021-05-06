@@ -13,8 +13,8 @@ export default function Hexagonal({ list }: any) {
     <div className={styles.container}>
       <ul>
         {
-          list && list.map((item: IProps) => (
-            <li>
+          list && list.map((item: IProps, index: number) => (
+            <li key={index}>
               <a href={item.href}>
                 <FontAwesomeIcon icon={item.icon} />
               </a>
