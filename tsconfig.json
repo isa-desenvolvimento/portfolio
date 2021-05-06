@@ -16,7 +16,12 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["pages/components/*"],
+      "@/utils/*": ["pages/utils/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -27,3 +32,6 @@
     "node_modules"
   ]
 }
+
+
+// caminho absoluto https://benjaminwfox.medium.com/next-js-setup-config-for-testing-linting-and-absolute-imports-605959d7bd6f

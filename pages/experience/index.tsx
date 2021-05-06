@@ -1,15 +1,9 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import styles from './styles.module.scss';
 import 'react-vertical-timeline-component/style.min.css';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from '../components/card';
 
-export interface IProps {
-  txt: string;
-}
-
-export default function Experience({ txt }: IProps) {
+export default function Experience() {
   const experiences = [
     {
       empresa: 'IPAM',
