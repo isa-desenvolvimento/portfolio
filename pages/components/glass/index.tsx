@@ -1,3 +1,4 @@
+import { useImperativeHandle } from 'react';
 import styles from './styles.module.scss';
 import Avatar from '../avatar';
 import Title from '../title';
@@ -10,7 +11,9 @@ export interface IGlass {
   txt: string;
 }
 
-export default function Glass({ title, avatar, txt }: IGlass) {
+export default function Glass({
+  title, avatar, txt,
+}: IGlass) {
   return (
     <div className={`glass-profile ${styles.container}`}>
       <Avatar
