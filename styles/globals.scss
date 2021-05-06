@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: sans-serif;
+  background: var(--gray-base);
+  
 }
 
 a {
@@ -26,31 +27,45 @@ a {
   --gray-middle:  rgba(255, 255, 255, 0.3);
   --gray: #4d5156;
   --gray-middle-default: #dee2e6;
+  --rose: #F0C0BF;
 }
 
-.wave {
+.vertical-timeline::before {
+    content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0;
+    left: 1rem;
+    height: 100%;
+    width: 0.1rem !important;
+    background: var(--rose) !important;
+}
+.vertical-timeline-element-content{
+    box-shadow: none !important;
+}
 
-    path { 
-      fill: var(--cyan);
+.vertical-timeline-element-icon {
+    position: absolute;
+    top: 2rem!important;
+    left: 0.7rem!important;
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 50%;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
 
+.vertical-timeline-element-date {
+    color: var(--gray-middle-default);
+  }
 
-      &:hover {
-        animation: animate 30s linear infinite;
-      }
-
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-icon {
+      margin-left: -10px!important;
+      left: 50%!important;
       
-    }
-
-
+  }
+  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    top: 1rem!important;
+    color: inherit;
+  } 
 }
-
-
-@keyframes animate{
-  0% { transform: translateX(0px);}
-  100% {transform: translateX(1000px);}
-}
-
